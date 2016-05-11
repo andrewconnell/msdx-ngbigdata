@@ -1,0 +1,12 @@
+{
+  "files": "src/**/*.*",
+  "logLevel": "info",
+  "logPrefix": "msdx-ngbigdata",
+  "notify": false,
+  "server": {
+    "baseDir": ["src"],
+    "routes": {
+      "/node_modules": "./node_modules"
+    }
+  }
+}

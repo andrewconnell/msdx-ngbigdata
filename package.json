@@ -1,0 +1,22 @@
+{
+  "name": "msdx-ngbigdata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --config browsersync.config.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adal-angular": "github:azuread/azure-activedirectory-library-for-js",
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1"
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ngPagingBigData</title>
+  <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/navbar-fixed-top.css" rel="stylesheet">
+</head>
+<body ng-app="ngPagingBigData">
+  <!-- navbar -->
+  <div data-ng-include="'app/common/navbar.html'"></div>
+
+  <div class="container">
+    <div data-ng-view></div>
+  </div>
+  <!-- /container -->
+
+  <!-- vendor scripts -->
+  <!-- bootstrap -->
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- angular -->
+  <script src="/node_modules/angular/angular.min.js"></script>
+  <script src="/node_modules/angular-route/angular-route.min.js"></script>
+  <!-- adal js -->
+  <script src="/node_modules/adal-angular/dist/adal.min.js"></script>
+  <script src="/node_modules/adal-angular/dist/adal-angular.min.js"></script>
+  <!-- /vendor scripts -->
+
+  <!-- app scripts -->
+  <script src="/app/app.js"></script>
+  <script src="/app/app.config.js"></script>
+  <script src="/app/app.msGraphRest.js"></script>
+  <script src="/app/common/navbar.controller.js"></script>
+  <script src="/app/mail/list.controller.js"></script>
+</body>
+
+</html>

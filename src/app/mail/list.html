@@ -1,0 +1,38 @@
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="PageSize" class="col-sm-2 control-label">Page Size</label>
+    <div class="col-sm-1">
+      <input type="text" class="form-control" id="PageSize" 
+             ng-model="vm.pageSize" ng-change="vm.refreshMail()" />
+    </div>
+  </div>
+</form>
+
+<h2>Listing Email</h2> List all the email in the current user's <strong>Deleted Items</strong> folder.
+
+<div>
+  <table class="table table-striped table-hover">
+    <tr>
+      <th>Received</th>
+      <th>From</th>
+      <th>Subject</th>
+    </tr>
+    <tr ng-repeat="item in vm.items">
+      <td nowrap>{{::item.sentDateTime | date:'MMMM dd, yyyy HH:mm'}}</td>
+      <td>{{::item.sender.emailAddress.name}}</td>
+      <td>{{::item.subject}}</td>
+    </tr>
+  </table>
+</div>
+
+<ul class="pagination">
+  <li>
+    <a ng-click="vm.pagePrev()">&laquo;</a>
+  </li>
+  <li>
+    <a href="">{{vm.currentPage}}</a>
+  </li>
+  <li>
+    <a ng-click="vm.pageNext()">&raquo;</a>
+  </li>
+</ul>
